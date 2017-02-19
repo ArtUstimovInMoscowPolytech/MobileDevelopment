@@ -13,7 +13,7 @@ namespace MobileDevelopment
         {
             InitializeComponent();
 
-            MainPage = new MobileDevelopment.MainPage();
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()
