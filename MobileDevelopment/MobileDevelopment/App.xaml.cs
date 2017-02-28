@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using MobileDevelopment.Views;
 using Xamarin.Forms;
 
 namespace MobileDevelopment
@@ -13,7 +13,10 @@ namespace MobileDevelopment
         {
             InitializeComponent();
 
-            MainPage = new Views.MainPage();
+            //var np = new NavigationPage(new MediatorPage());
+            //np.BarBackgroundColor = Color.Orange;
+            //MainPage = np;//new Views.RootPage();
+            MainPage = new RootPage();
         }
 
         protected override void OnStart()

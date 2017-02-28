@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDevelopment.Views.ProductPage">
+    <StackLayout Padding="20">
+        <Label Text="Наименование:"
+               FontSize="Large"/>
+        <Label Text="{Binding Product.Name}"/>
+        <Label Text="Описание:"
+               FontSize="Large"/>
+        <Label Text="{Binding Product.Description}"/>
+        <Label Text="Цена:"
+               FontSize="Large"/>
+        <Label Text="{Binding Product.Price}"/>
+        <Label Text="Количество:"
+               FontSize="Large"/>
+        <Label Text="{Binding Quantity}"/>
+        <Label Text="Сумма:"
+               FontSize="Large"/>
+        <Label Text="{Binding Sum}"/>
+        <Stepper ValueChanged="Stepper_OnValueChanged"
+                 HorizontalOptions="Center"/>
+        <Button Text="Заказать"
+                Command="{Binding PostOrderCommand}"
+                HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>

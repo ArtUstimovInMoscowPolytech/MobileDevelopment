@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDevelopment.Views.Biglion.TabPage"
+             xmlns:pages="clr-namespace:MobileDevelopment.Views;assembly=MobileDevelopment.Views"
+             xmlns:views="clr-namespace:MobileDevelopment.Views;assembly=MobileDevelopment"
+             xmlns:biglion="clr-namespace:MobileDevelopment.Views.Biglion;assembly=MobileDevelopment"
+             Title="КУПОНЫ"
+             BarBackgroundColor="Orange">
+      <!--Pages can be added as references or inline-->
+      <ContentPage Title="Все">
+
+      </ContentPage>
+    <biglion:TabPageTab1/>
+    <ContentPage Title="Действующие">
+
+    </ContentPage>
+</TabbedPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDevelopment.Views.Biglion.TabPageTab1"
+             Title="Действующие">
+    <ListView ItemsSource="{Binding Items}"
+              x:Name="_listView"
+              HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.View>
+                        <StackLayout BackgroundColor="#019D4F"
+                                     Margin="5"
+                                     Padding="5">
+                            <Image Source="https://igx.4sqi.net/img/general/558x200/62852567_DHcFIijmY7a48O-_8JTu4fVkl8eQYAGYOiBN5oKtT0A.jpg"
+                                   WidthRequest="300"
+                                   HeightRequest="200"/>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="Дата покупки"
+                                           TextColor="White"/>
+                                    <Label Text="18.11.2016"
+                                           FontAttributes="Bold"
+                                           TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout>
+                                        <Label Text="Действует до"
+                                               TextColor="White"/>
+                                        <Label Text="30.11.2016"
+                                           FontAttributes="Bold"
+                                               TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand">
+                                        
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="EndAndExpand">
+                                    <Label Text="КУПОНЫ >"
+                                           TextColor="White"
+                                           HorizontalOptions="End"
+                                           VerticalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </StackLayout>
+                            
+
+                        </StackLayout>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
