@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Microsoft.Azure.Mobile;
 using UIKit;
 
 namespace MobileDevelopment.iOS
@@ -21,7 +22,16 @@ namespace MobileDevelopment.iOS
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-        {
+        { 
+            // Подключение Mobile Center
+            MobileCenter.Configure("API_KEY");
+
+            // Подключение Flurry
+            Flurry.Analytics.FlurryAgent.StartSession("API_KEY");
+
+            // Подключение Yandex.Metrica
+            YandexMetricaIOS.YandexMetricaImplementation.Activate("API_KEY");
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

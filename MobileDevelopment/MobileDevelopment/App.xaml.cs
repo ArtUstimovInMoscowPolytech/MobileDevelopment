@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using MobileDevelopment.Views;
 using Xamarin.Forms;
 
@@ -21,7 +24,8 @@ namespace MobileDevelopment
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // Подключение Mobile Center
+            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

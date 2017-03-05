@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.Azure.Mobile;
 
 namespace MobileDevelopment.Droid
 {
@@ -19,9 +20,17 @@ namespace MobileDevelopment.Droid
 
             base.OnCreate(bundle);
 
+            // Подключение Yandex.Metrica
+            YandexMetricaAndroid.YandexMetricaImplementation.Activate(this, "API_KEY", this.Application);
+
+            // Подключение Flurry
+            Flurry.Analytics.FlurryAgent.Init(this, "API_KEY");
+
+            // Подключение Mobile Center
+            MobileCenter.Configure("API_KEY");
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
     }
 }
-

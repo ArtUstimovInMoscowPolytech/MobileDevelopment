@@ -22,6 +22,8 @@
     
     <views:CustomEntry />
   
+    <Button Text="Crash"
+            Clicked="Button_OnClicked"/>
   </StackLayout>
 
 </ContentPage>
