@@ -16,16 +16,18 @@ namespace MobileDevelopment
         {
             InitializeComponent();
 
+            //Biglion
             //var np = new NavigationPage(new MediatorPage());
             //np.BarBackgroundColor = Color.Orange;
             //MainPage = np;//new Views.RootPage();
+
             MainPage = new RootPage();
         }
 
         protected override void OnStart()
         {
-            // Подключение Mobile Center
-            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
+            //// Подключение Mobile Center
+            //MobileCenter.Start(typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

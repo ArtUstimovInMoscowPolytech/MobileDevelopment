@@ -19,7 +19,8 @@
                FontSize="Large"/>
         <Label Text="{Binding Sum}"/>
         <Stepper ValueChanged="Stepper_OnValueChanged"
-                 HorizontalOptions="Center"/>
+                 HorizontalOptions="Center"
+                 Value="{Binding Quantity}"/>
         <Button Text="Заказать"
                 Command="{Binding PostOrderCommand}"
                 HorizontalOptions="Center"/>

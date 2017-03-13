@@ -23,14 +23,14 @@ namespace MobileDevelopment.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         { 
-            // Подключение Mobile Center
-            MobileCenter.Configure("API_KEY");
+            //// Подключение Mobile Center
+            //MobileCenter.Configure("API_KEY");
 
-            // Подключение Flurry
-            Flurry.Analytics.FlurryAgent.StartSession("API_KEY");
+            //// Подключение Flurry
+            //Flurry.Analytics.FlurryAgent.StartSession("API_KEY");
 
-            // Подключение Yandex.Metrica
-            YandexMetricaIOS.YandexMetricaImplementation.Activate("API_KEY");
+            //// Подключение Yandex.Metrica
+            //YandexMetricaIOS.YandexMetricaImplementation.Activate("API_KEY");
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

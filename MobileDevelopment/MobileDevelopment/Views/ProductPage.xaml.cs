@@ -14,7 +14,7 @@ namespace MobileDevelopment.Views
 
             _viewModel = new ProductViewModel(this, new DataService());
 
-            BindingContext = _viewModel;   
+            BindingContext = _viewModel;  
         }
 
         private void Stepper_OnValueChanged(object sender, ValueChangedEventArgs e)

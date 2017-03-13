@@ -18,6 +18,11 @@ namespace MobileDevelopment.ViewModels
                 Title = "Товар",
                 PageType = typeof(ProductPage),
             },
+            new MenuItemModel
+            {
+                Title = "Файл",
+                PageType = typeof(FilePage),
+            },
         };
     }
 }
