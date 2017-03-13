@@ -23,6 +23,11 @@ namespace MobileDevelopment.ViewModels
                 Title = "Файл",
                 PageType = typeof(FilePage),
             },
+            new MenuItemModel
+            {
+                Title = "Оповещения",
+                PageType = typeof(LocalPushPage),
+            },
         };
     }
 }
